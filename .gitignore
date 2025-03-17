@@ -33,4 +33,4 @@ generator/generator
 generator/mibs
 generator/snmp.yml
 
-/.circleci
+/snmp_exporter/.circleci
