@@ -48,3 +48,15 @@ jobs:
         with:
           args: --verbose
           version: v1.64.6
+      - name: Cache Go modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/go/pkg/mod
+            ~/.cache/go-build
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+
+      - run: go mod tidy
+      - uses: golangci/golangci-lint-action@v3
+        with:
+          version: v1.55
