@@ -1,5 +1,4 @@
 module github.com/prometheus/snmp_exporter
-module github.com/robotneo/exporter-toolkit
 
 go 1.22
 
