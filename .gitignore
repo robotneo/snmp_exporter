@@ -32,5 +32,3 @@ dependencies-stamp
 generator/generator
 generator/mibs
 generator/snmp.yml
-
-/snmp_exporter/.circleci
