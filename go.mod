@@ -36,3 +36,5 @@ require (
 	golang.org/x/text v0.23.0 // indirect
 	google.golang.org/protobuf v1.36.5 // indirect
 )
+
+replace github.com/prometheus/exporter-toolkit => github.com/robotneo/exporter-toolkit v0.14.1
